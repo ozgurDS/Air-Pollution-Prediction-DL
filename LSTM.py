@@ -15,7 +15,7 @@ from keras.models import Sequential
 from datetime import datetime
 
 # load data
-data_path = "../input/pollution/parx_pollution.csv"
+data_path = "pollution.csv"
 dataset = pd.read_csv(data_path,  parse_dates = [['year', 'month', 'day', 'hour']], index_col=0)
 dataset.drop('No', axis=1, inplace=True)
 # manually specify column names
